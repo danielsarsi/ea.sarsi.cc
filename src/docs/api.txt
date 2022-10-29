@@ -1,0 +1,33 @@
+time                    number
+    Última atualização.
+
+sectionsTotalized       [porcentagem: number, total: number]
+    Seções totalizadas.
+
+sectionsCleared         [porcentagem: number, total: number]
+    Seções apuradas.
+
+validVotes              [porcentagem: number, total: number]
+    Votos válidos.
+
+blankVotes              [porcentagem: number, total: number]
+    Votos em branco.
+
+nullVotes               [porcentagem: number, total: number]
+    Votos nulos.
+
+candidates              object[]
+    id                  number
+        Número identificador.
+    
+    elected             boolean
+        Se eleito.
+    
+    name                string
+        Nome.
+
+    votes               [porcentagem: number, total: number]
+        Votos totais.
+
+    votesToBeElected    number
+        Votos restantes estimados para o candidato ser eleito.
