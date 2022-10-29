@@ -54,7 +54,7 @@ Deno.serve(
     const url = new URL(request.url);
 
     if (url.pathname === "/api.txt") {
-      const apiTxt = await Deno.open("./src/docs/api.txt", { read: true });
+      const apiTxt = await Deno.open("api.txt", { read: true });
 
       const apiTxtStat = await apiTxt.stat();
       const etag = await calculate(apiTxtStat);
