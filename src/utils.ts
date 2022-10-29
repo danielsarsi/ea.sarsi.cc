@@ -14,6 +14,7 @@ export function parsePercentage(value: string): number {
 export const dateTimeFormat = new Intl.DateTimeFormat("pt-BR", {
   dateStyle: "short",
   timeStyle: "medium",
+  timeZone: "America/Sao_Paulo",
 });
 
 export const numberFormat = new Intl.NumberFormat("pt-BR");
